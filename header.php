@@ -13,3 +13,4 @@
 
 <div id="page" class="site">
     <main>
+        <?php Display::GetTemplatePart( 'header' ) ?>

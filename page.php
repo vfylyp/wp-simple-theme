@@ -1,3 +1,7 @@
+
+
 <?php get_header() ?>
-    <!-- Policy  -->
+
+<?php Display::getTemplatePart('privacy/description') ?>
+
 <?php get_footer() ?>
