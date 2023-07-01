@@ -6,6 +6,6 @@
 
 <?php get_header() ?>
 
-<?php Display::GetTemplatePart( 'contact/description' ) ?>
+<?php Display::GetTemplatePart( 'page-contact/description' ) ?>
 
 <?php get_footer() ?>
