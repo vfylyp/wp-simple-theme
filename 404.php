@@ -1,3 +1,5 @@
 <?php get_header(); ?>
-    <!-- 404 message -->
+
+<?php Display::getTemplatePart( '404' ) ?>
+
 <?php get_footer();
