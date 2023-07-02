@@ -2,18 +2,21 @@
 
 if( !defined( 'ABSPATH' ) ) exit;
 
-class ContactFormFilter {
+class ContactFormFilter{
     public function __construct(){
         $this->applyActions();
     }
 
     public function applyActions(){
         add_action( 'wpcf7_init', [$this, 'addCustomTags'] );
+
+        add_filter( 'wpcf7_load_js', '__return_false' );
+        add_filter( 'wpcf7_load_css', '__return_false' );
     }
 
     public function addCustomTags(){
         $template_name = 'cf7/social-icons';
-        wpcf7_add_form_tag('social_icons', function( ) use ( $template_name ) {
+        wpcf7_add_form_tag('social_icons', function() use ( $template_name ) {
             return \Display::getTemplatePart('cf7/social-icons', [], false);
         } );
     }
@@ -21,5 +24,3 @@ class ContactFormFilter {
 }
 
 new ContactFormFilter();
-
-class_alias( 'WpSimpleTheme\Cf7\ContactFormFilter', 'ContactFormFilter' );
