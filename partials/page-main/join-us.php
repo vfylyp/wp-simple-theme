@@ -4,4 +4,4 @@
  */
 ?>
 
-<?php echo do_shortcode( '[contact-form-7 id="5" title="join us"]' ) ?>
+<?php echo do_shortcode( '[contact-form-7 title="join us"]' ) ?>

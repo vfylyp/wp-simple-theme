@@ -5,4 +5,4 @@
  */
 ?>
 
-<?php echo do_shortcode( '[contact-form-7 id="114" title="Send CV"]' ) ?>
+<?php echo do_shortcode( '[contact-form-7 title="Send CV"]' ) ?>
