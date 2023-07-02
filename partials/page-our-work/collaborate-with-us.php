@@ -1,6 +1,7 @@
 <?php
 /**
  * Template part Name: Collaborate with us 
+ * @param array $acf_fields
  */
 ?>
 

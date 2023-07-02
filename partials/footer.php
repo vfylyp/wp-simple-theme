@@ -1,6 +1,7 @@
 <?php
 /**
  * Template part Name: footer
+ * @param array $acf_fields
  */
 ?>
 

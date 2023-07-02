@@ -1,6 +1,7 @@
 <?php
 /**
  * Template part Name: Didn’t find your position 
+ * @param array $acf_fields
  */
 ?>
 

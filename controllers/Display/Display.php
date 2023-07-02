@@ -5,6 +5,10 @@ if( !defined( 'ABSPATH' ) ) exit;
 class Display{
 
     public static function getTemplatePart( $slug, $args = [], $echo = true ){
+        if( function_exists('get_fields') ){
+            $args['acf_fields'] = get_fields();
+        }
+
         return !empty( $slug )
             ? static::getTemplate( 'partials/'.$slug, $args, $echo )
             : '';

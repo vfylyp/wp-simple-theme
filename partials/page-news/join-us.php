@@ -1,6 +1,7 @@
 <?php
 /**
  * Template part Name: Join us 
+ * @param array $acf_fields
  */
 ?>
 
